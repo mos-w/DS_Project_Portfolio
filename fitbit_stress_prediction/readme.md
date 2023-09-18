@@ -8,7 +8,7 @@
 
 ## Research Question
 
-### This research will explore how a selection of metrics tracked by Fitbit are statistically significant in their ability to explain variance in the Stress Score and to predict the Stress Score.
+### This research will explore whether a selection of metrics tracked by Fitbit are statistically significant in their ability to explain variance in the Stress Score and to predict the Stress Score.
 
 ## Dataset
 
@@ -27,11 +27,12 @@
 
 ### OLS Regression model and Support Vector Machine Regression model are selected to evaluate whether the feature set is statistically significant in explaining the variance in the Target and predicting the Target. 
 
-### OLS Regression: Adjusted R-squared value is 0.35 which means that the model only explains 37% of the variance in stress score, driven by nonlinearity in the dataset 
+### 1) OLS Regression: 
+- Adjusted R-squared value is 0.35 which means that the model only explains 37% of the variance in stress score, driven by nonlinearity in the dataset 
 
 ### SVM Model: 
 - RBF (radial basis function) kernel functions was use to predict the target variable.
-- The SVM model score measures how well a statistical model predicts an outcome. This means in our RBF model, the feature set can explain approximately 70% of the variability in the Target which is statistically significant and better than the OLS Regression model.
+- The SVM model score, similarly to R-squared, measures how well a statistical model predicts an outcome. In our RBF model, the feature set can explain approximately 70% of the variability in the Target which is statistically significant and better than the OLS Regression model.
 - Three evaluation metrics (MAE 0.124, MSE 0.025, RMSE 0.158) are all calculated to be low, and lower values indicate better performance of the model. Specifically, stress score is measured along a range of 0-100 and the magnitude of errors calculated in our metrics are below 0.2, which is reasonably low compared to the average stress score of 76 in our dataset.
 
 
